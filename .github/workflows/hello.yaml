@@ -1,0 +1,27 @@
+#Workflow
+#Should have a name
+name: Hello
+
+on:
+ workflow_dispatch:
+ 
+ 
+#Jobs tell what the workflow should do; there can be one or more than one jobs, hence we write the code
+#should be inside the workflow 
+jobs:
+# 1st job (give indentation)
+ say-hello:
+ #creates an ephemeral(something its last for short time) container with ubuntu running  
+  runs-on: ubuntu-latest
+  # That ephemeral container will have steps to execute , hence name those steps and run : hence we write jobs
+  steps:
+    - name: say hello to everyone
+      run: echo "Hello dosto"
+
+ 
+
+
+#steps
+#should be inside the job
+
+#Actions
