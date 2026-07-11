@@ -1,3 +1,4 @@
+# add linting run comand to check
 from flask import Flask, render_template
 app = Flask(__name__)
 
